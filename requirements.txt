@@ -1,0 +1,8 @@
+streamlit
+pymupdf
+python-docx
+sentence-transformers
+sqlalchemy
+llama-index-llms-groq
+spacy
+pandas
