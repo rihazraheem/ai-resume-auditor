@@ -19,6 +19,6 @@ class InfoExtractor:
         if name=="Unknown":
             lines=[line.strip() for line in text.split('\n') if line.strip()]
             if lines:
-              name=lines[0]
+              name=lines[0][:50]
 
         return name, email, phone
