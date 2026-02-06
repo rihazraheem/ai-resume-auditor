@@ -8,10 +8,5 @@ _nlp=None
 def get_nlp():
     global _nlp
     if _nlp is None:
-        try:
-            _nlp=spacy.load(Config.SPACY_MODEL_NAME)
-        except OSError:
-            logger.info("Downloading spaCy model...")
-            spacy.cli.download(Config.SPACY_MODEL_NAME)
-            _nlp=spacy.load(Config.SPACY_MODEL_NAME)
+        _nlp = spacy.load("en_core_web_sm")
     return _nlp
